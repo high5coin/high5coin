@@ -1,15 +1,15 @@
 ![Kloindike](http://i.imgur.com/19dc1hf.png)
 
-# Klondike Coin [KDC]
-http://ewww.klondikecoin.com
-Copyright (c) 2014 Klondikecoin Developers
+# High5 Coin [HI5]
+http://ewww.high5coin.com
+Copyright (c) 2014 High5coin Developers
 
 
-What is Klondikecoin?
+What is High5coin?
 ----------------
 
-Klondike Coin is a modified version of Litecoin 0.8.6, which uses scrypt as a proof-of-work algorithm.
-The purpose of the Klondike coin is to emulate the Klondike Gold Rush of 1896. (More information on Klondike Gold Rush can be found here http://en.wikipedia.org/wiki/Klondike_Gold_Rush).
+High5 Coin is a modified version of Litecoin 0.8.6, which uses scrypt as a proof-of-work algorithm.
+The purpose of the High5 coin is to emulate the High5 Gold Rush of 1896. (More information on High5 Gold Rush can be found here http://en.wikipedia.org/wiki/High5_Gold_Rush).
 
 Specifications
 ---------------
@@ -22,15 +22,14 @@ Specifications
  - Difficulty retarget every 24 hours.
 
 For more information, as well as an immediately useable, binary version of
-the Klondikecoin client sofware, see http://www.klondikecoin.com.
+the High5coin client sofware, see http://www.high5coin.com.
 
 License
 -------
-
-Khlondike is released under the terms of the MIT license. See `COPYING` for more
+High5coin is released under the terms of the MIT license. See `COPYING` for more
 information or see http://opensource.org/licenses/MIT.
 
-KDC Development Process
+HI5 Development Process
 -------------------
 
 Developers work in their own trees, then submit pull requests when they think

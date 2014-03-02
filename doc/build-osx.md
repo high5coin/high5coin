@@ -1,4 +1,4 @@
-Mac OS X klondikecoind build instructions
+Mac OS X high5coind build instructions
 ====================================
 
 Authors
@@ -26,7 +26,7 @@ Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.
 Notes
 -----
 
-See `doc/readme-qt.rst` for instructions on building Klondikecoin-Qt, the
+See `doc/readme-qt.rst` for instructions on building High5coin-Qt, the
 graphical user interface.
 
 Tested on OS X 10.5 through 10.8 on Intel processors only. PPC is not
@@ -72,14 +72,14 @@ Installing the dependencies using MacPorts is very straightforward.
 
     sudo port install boost db48@+no_java openssl miniupnpc
 
-### Building `klondikecoind`
+### Building `high5coind`
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone git@github.com:klondikecoin-project/klondikecoin.git klondikecoin
-        cd klondikecoin
+        git clone git@github.com:high5coin-project/high5coin.git high5coin
+        cd high5coin
 
-2.  Build klondikecoind:
+2.  Build high5coind:
 
         cd src
         make -f makefile.osx
@@ -107,12 +107,12 @@ If not, you can ensure that the Brew OpenSSL is correctly linked by running
 
 Rerunning "openssl version" should now return the correct version.
 
-### Building `klondikecoind`
+### Building `high5coind`
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone git@github.com:klondikecoin-project/klondikecoin.git klondikecoin
-        cd klondikecoin
+        git clone git@github.com:high5coin-project/high5coin.git high5coin
+        cd high5coin
 
 2.  Modify source in order to pick up the `openssl` library.
 
@@ -122,7 +122,7 @@ Rerunning "openssl version" should now return the correct version.
 
         patch -p1 < contrib/homebrew/makefile.osx.patch
 
-3.  Build klondikecoind:
+3.  Build high5coind:
 
         cd src
         make -f makefile.osx
@@ -134,8 +134,8 @@ Rerunning "openssl version" should now return the correct version.
 Creating a release build
 ------------------------
 
-A klondikecoind binary is not included in the Klondikecoin-Qt.app bundle. You can ignore
-this section if you are building `klondikecoind` for your own use.
+A high5coind binary is not included in the High5coin-Qt.app bundle. You can ignore
+this section if you are building `high5coind` for your own use.
 
 If you are building `litecond` for others, your build machine should be set up
 as follows for maximum compatibility:
@@ -156,30 +156,30 @@ As of December 2012, the `boost` port does not obey `macosx_deployment_target`.
 Download `http://gavinandresen-bitcoin.s3.amazonaws.com/boost_macports_fix.zip`
 for a fix. Some ports also seem to obey either `build_arch` or
 `macosx_deployment_target`, but not both at the same time. For example, building
-on an OS X 10.6 64-bit machine fails. Official release builds of Klondikecoin-Qt are
+on an OS X 10.6 64-bit machine fails. Official release builds of High5coin-Qt are
 compiled on an OS X 10.6 32-bit machine to workaround that problem.
 
-Once dependencies are compiled, creating `Klondikecoin-Qt.app` is easy:
+Once dependencies are compiled, creating `High5coin-Qt.app` is easy:
 
     make -f Makefile.osx RELEASE=1
 
 Running
 -------
 
-It's now available at `./klondikecoind`, provided that you are still in the `src`
+It's now available at `./high5coind`, provided that you are still in the `src`
 directory. We have to first create the RPC configuration file, though.
 
-Run `./klondikecoind` to get the filename where it should be put, or just try these
+Run `./high5coind` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=klondikecoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Klondikecoin/klondikecoin.conf"
-    chmod 600 "/Users/${USER}/Library/Application Support/Klondikecoin/klondikecoin.conf"
+    echo -e "rpcuser=high5coinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/High5coin/high5coin.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/High5coin/high5coin.conf"
 
 When next you run it, it will start downloading the blockchain, but it won't
 output anything while it's doing this. This process may take several hours.
 
 Other commands:
 
-    ./klondikecoind --help  # for a list of command-line options.
-    ./klondikecoind -daemon # to start the klondikecoin daemon.
-    ./klondikecoind help    # When the daemon is running, to get a list of RPC commands
+    ./high5coind --help  # for a list of command-line options.
+    ./high5coind -daemon # to start the high5coin daemon.
+    ./high5coind help    # When the daemon is running, to get a list of RPC commands

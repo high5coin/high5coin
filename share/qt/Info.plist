@@ -3,7 +3,7 @@
 <plist version="0.9">
 <dict>
 	<key>CFBundleIconFile</key>
-	<string>klondikecoin.icns</string>
+	<string>high5coin.icns</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleGetInfoString</key>
@@ -15,19 +15,19 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleExecutable</key>
-	<string>Klondikecoin-Qt</string>
+	<string>High5coin-Qt</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.klondikecoin.Klondikecoin-Qt</string>
+	<string>org.high5coin.High5coin-Qt</string>
         <key>CFBundleURLTypes</key>
         <array>
           <dict>
             <key>CFBundleTypeRole</key>
             <string>Editor</string>
             <key>CFBundleURLName</key>
-            <string>org.klondikecoin.KlondikecoinPayment</string>
+            <string>org.high5coin.High5coinPayment</string>
             <key>CFBundleURLSchemes</key>
             <array>
-              <string>klondikecoin</string>
+              <string>high5coin</string>
             </array>
           </dict>
         </array>
